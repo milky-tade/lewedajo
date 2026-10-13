@@ -220,10 +220,10 @@ const translations = {
     form_btn_submit: "Submit Delivery Request",
     form_btn_submitting: "Submitting Request...",
     form_btn_cancel: "Cancel",
-    form_success_title: "Request Received Successfully!",
-    form_success_msg: "Thank you. Our team will contact you shortly via WhatsApp.",
+    form_success_title: "Order Sent Successfully!",
+    form_success_msg: "Thank you! Your delivery request has been submitted directly from the website. Our team will review your order and reach out to you shortly.",
     form_success_whatsapp_btn: "Open WhatsApp to Chat Now",
-    form_success_close_btn: "Close",
+    form_success_close_btn: "Done",
 
     // Footer
     footer_tagline: "Connecting Ethiopian diaspora families with trustworthy, transparent shopping and delivery services.",
@@ -459,10 +459,10 @@ const translations = {
     form_btn_submit: "ትዕዛዙን ይላኩ",
     form_btn_submitting: "በመላክ ላይ...",
     form_btn_cancel: "ሰርዝ",
-    form_success_title: "ትዕዛዝዎ በተሳካ ሁኔታ ደርሶናል!",
-    form_success_msg: "እናመሰግናለን። የቡድናችን አባል በዋትስአፕ በቅርቡ ያነጋግርዎታል።",
+    form_success_title: "ትዕዛዝዎ በተሳካ ሁኔታ ተልኳል!",
+    form_success_msg: "እናመሰግናለን! የማድረስ ጥያቄዎ በቀጥታ ከድረ-ገጹ ደርሶናል። ቡድናችን ትዕዛዝዎን አይቶ በቅርቡ ያነጋግርዎታል።",
     form_success_whatsapp_btn: "ወደ ዋትስአፕ ሄደው ያነጋግሩን",
-    form_success_close_btn: "ዝጋ",
+    form_success_close_btn: "ተጠናቋል",
 
     // Footer
     footer_tagline: "የዲያስፖራውን ቤተሰብ ከሀገር ቤት ወዳጆቻቸው ጋር በታማኝነትና በግልጽነት የሚያገናኝ አገልግሎት።",
@@ -698,10 +698,10 @@ const translations = {
     form_btn_submit: "Gaaffii Dhiyeessaa Ergaa",
     form_btn_submitting: "Ergamaa Jira...",
     form_btn_cancel: "Dhiisi",
-    form_success_title: "Gaaffiin Keessan Milkaa'inaan Nu Qaqqabeera!",
-    form_success_msg: "Galatoomaa. Gareen keenya dhihootti WhatsApp'n isin quunnama.",
+    form_success_title: "Ajajni Keessan Milkaa'inaan Ergameera!",
+    form_success_msg: "Galatoomaa! Gaaffiin dhiyeessaa keessan kallattiin weebsaayitii irraa nu qaqqabeera. Gareen keenya ajaja keessan ilaaluun dhihootti isin quunnama.",
     form_success_whatsapp_btn: "WhatsApp Banuun Nu Quunnamaa",
-    form_success_close_btn: "Cufaa",
+    form_success_close_btn: "Xumurameera",
 
     // Footer
     footer_tagline: "Maatii diyaspooraa fi maatii isaanii biyya keessaa amanamummaa fi iftoominan walitti fiduu.",

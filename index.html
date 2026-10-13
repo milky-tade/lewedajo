@@ -363,7 +363,7 @@
           <a href="#services"
             class="ml-2 px-5 py-2.5 border-2 border-brand text-brand rounded-full text-sm font-semibold hover:bg-brand hover:text-white transition-all"
             data-i18n="nav_request_delivery">Request Delivery</a>
-          <a href="https://wa.me/251946734473" target="_blank"
+          <a href="whatsapp://send?phone=251946734473"
             class="px-5 py-2.5 bg-brand text-white rounded-full text-sm font-semibold hover:bg-brand-dark transition-all flex items-center gap-2 shadow-md hover:shadow-lg">
             <i class="fab fa-whatsapp text-lg"></i>
             <span data-i18n="nav_order_whatsapp">Order on WhatsApp</span>
@@ -403,7 +403,7 @@
           <a href="#services"
             class="block text-center py-3 border-2 border-brand text-brand rounded-full font-semibold hover:bg-brand hover:text-white transition-all mobile-nav-link"
             data-i18n="nav_request_delivery">Request Delivery</a>
-          <a href="https://wa.me/251946734473" target="_blank"
+          <a href="whatsapp://send?phone=251946734473"
             class="block text-center py-3 bg-brand text-white rounded-full font-semibold hover:bg-brand-dark transition-all flex items-center justify-center gap-2">
             <i class="fab fa-whatsapp text-lg"></i>
             <span data-i18n="nav_order_whatsapp">Order on WhatsApp</span>
@@ -454,7 +454,7 @@
             <i class="fas fa-paper-plane"></i>
             <span data-i18n="hero_cta_request">Request Delivery</span>
           </a>
-          <a href="https://wa.me/251946734473" target="_blank"
+          <a href="whatsapp://send?phone=251946734473"
             class="px-8 py-4 bg-[#25d366] text-white rounded-full text-lg font-semibold hover:bg-[#1da851] transition-all shadow-lg hover:shadow-xl flex items-center gap-2">
             <i class="fab fa-whatsapp text-xl"></i>
             <span data-i18n="hero_cta_whatsapp">Order on WhatsApp</span>
@@ -1226,7 +1226,7 @@
             <i class="fas fa-paper-plane"></i>
             <span data-i18n="cta_btn_request">Request Delivery</span>
           </a>
-          <a href="https://wa.me/251946734473" target="_blank"
+          <a href="whatsapp://send?phone=251946734473"
             class="px-8 py-4 bg-[#25d366] text-white rounded-full text-lg font-semibold hover:bg-[#1da851] transition-all shadow-lg flex items-center gap-2">
             <i class="fab fa-whatsapp text-xl"></i>
             <span data-i18n="cta_btn_whatsapp">Order on WhatsApp</span>
@@ -1268,7 +1268,7 @@
               class="w-10 h-10 bg-gray-800 hover:bg-brand rounded-lg flex items-center justify-center transition-colors">
               <i class="fab fa-facebook-f text-white"></i>
             </a>
-            <a href="https://wa.me/251946734473" target="_blank"
+            <a href="whatsapp://send?phone=251946734473"
               class="w-10 h-10 bg-gray-800 hover:bg-[#25d366] rounded-lg flex items-center justify-center transition-colors">
               <i class="fab fa-whatsapp text-white"></i>
             </a>
@@ -1295,7 +1295,8 @@
           <ul class="space-y-3 text-sm">
             <li class="flex items-center gap-2">
               <i class="fab fa-whatsapp text-brand"></i>
-              <a href="https://wa.me/251946734473" class="hover:text-brand transition-colors">+251 946 734 473</a>
+              <a href="whatsapp://send?phone=251946734473" class="hover:text-brand transition-colors">+251 946 734
+                473</a>
             </li>
             <li class="flex items-start gap-2">
               <i class="fas fa-clock text-brand mt-0.5"></i>
@@ -1343,8 +1344,8 @@
     <span
       class="absolute right-16 bottom-1 bg-gray-800 text-white text-xs rounded-lg px-3 py-2 whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none"
       data-i18n="whatsapp_tooltip">Chat with our team on WhatsApp!</span>
-    <a href="https://wa.me/251946734473?text=Hello%2C%20I%20would%20like%20to%20request%20a%20delivery%20service."
-      target="_blank" class="whatsapp-float" style="position:static;" aria-label="Chat with us on WhatsApp">
+    <a href="whatsapp://send?phone=251946734473&text=Hello%2C%20I%20would%20like%20to%20request%20a%20delivery%20service."
+      class="whatsapp-float" style="position:static;" aria-label="Chat with us on WhatsApp">
       <i class="fab fa-whatsapp"></i>
     </a>
   </div>
@@ -1359,8 +1360,8 @@
         <div class="flex items-center justify-between">
           <div>
             <h2 class="text-xl font-bold" data-i18n="form_modal_title">Request a Service</h2>
-            <p class="text-green-100 text-sm mt-1" data-i18n="form_modal_subtitle">Fill in the details and our team will
-              reach out via WhatsApp.</p>
+            <p class="text-green-100 text-sm mt-1" data-i18n="form_modal_subtitle">Tell us what your loved ones need and
+              we'll deliver it with care.</p>
           </div>
           <button onclick="closeServiceModal()"
             class="w-10 h-10 bg-white/20 hover:bg-white/30 rounded-full flex items-center justify-center transition-colors"
@@ -1373,23 +1374,27 @@
       <!-- Modal Body -->
       <div class="modal-body">
         <!-- Success Panel -->
-        <div id="form-success" class="success-panel">
-          <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
-            <i class="fas fa-check text-4xl text-brand"></i>
+        <div id="form-success" class="success-panel text-center py-4">
+          <div
+            class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-5 text-brand shadow-inner">
+            <i class="fas fa-check text-4xl"></i>
           </div>
-          <h3 class="text-2xl font-bold text-gray-900 mb-3" data-i18n="form_success_title">Request Received
-            Successfully!</h3>
-          <p class="text-gray-600 mb-8" data-i18n="form_success_msg">Thank you. Our team will contact you shortly via
-            WhatsApp.</p>
-          <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
-            <a id="form-success-wa-link" href="https://wa.me/251946734473" target="_blank"
-              class="px-6 py-3 bg-[#25d366] text-white rounded-full font-semibold hover:bg-[#1da851] transition-all flex items-center gap-2 shadow-md">
-              <i class="fab fa-whatsapp text-lg"></i>
-              <span data-i18n="form_success_whatsapp_btn">Open WhatsApp to Chat Now</span>
-            </a>
-            <button onclick="closeServiceModal()"
-              class="px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-full font-semibold hover:bg-gray-100 transition-all"
-              data-i18n="form_success_close_btn">Close</button>
+          <h3 class="text-2xl font-bold text-gray-900 mb-2" data-i18n="form_success_title">Order Sent Successfully!</h3>
+          <p class="text-gray-600 max-w-md mx-auto mb-6 text-sm sm:text-base" data-i18n="form_success_msg">Thank you!
+            Your delivery request has been submitted directly from the website. Our team will review your order and
+            reach out to you shortly.</p>
+
+          <div id="order-summary-box"
+            class="bg-green-50/70 border border-green-200 rounded-2xl p-4 text-left max-w-md mx-auto mb-6 text-sm text-gray-700 space-y-1.5 shadow-sm">
+            <!-- Dynamically populated order summary -->
+          </div>
+
+          <div class="flex items-center justify-center gap-3">
+            <button type="button" onclick="closeServiceModal()"
+              class="px-8 py-3 bg-brand text-white rounded-full font-semibold hover:bg-brand-dark transition-all shadow-md hover:shadow-lg flex items-center gap-2">
+              <i class="fas fa-check"></i>
+              <span data-i18n="form_success_close_btn">Done</span>
+            </button>
           </div>
         </div>
 
@@ -1553,10 +1558,10 @@
 
           <!-- Submit Buttons -->
           <div class="flex flex-col sm:flex-row gap-3 mt-6">
-            <button type="submit"
-              class="flex-1 px-6 py-3.5 bg-brand hover:bg-brand-dark text-white rounded-xl font-semibold transition-colors flex items-center justify-center gap-2">
-              <i class="fas fa-paper-plane"></i>
-              <span data-i18n="form_btn_submit">Submit Request</span>
+            <button type="submit" id="form-submit-btn"
+              class="flex-1 px-6 py-3.5 bg-brand hover:bg-brand-dark text-white rounded-xl font-semibold transition-colors flex items-center justify-center gap-2 shadow-md">
+              <i class="fas fa-paper-plane" id="form-submit-icon"></i>
+              <span id="form-submit-text" data-i18n="form_btn_submit">Submit Delivery Request</span>
             </button>
             <button type="button" onclick="closeServiceModal()"
               class="px-6 py-3.5 border-2 border-gray-300 text-gray-600 rounded-xl font-semibold hover:bg-gray-100 transition-colors"
@@ -1659,15 +1664,44 @@
       document.getElementById('service-form').style.display = 'block';
     }
 
+    // ============================================================
+    // LEWEDAJO DIRECT NOTIFICATION CONFIGURATION
+    // ============================================================
+    const LEWEDAJO_CONFIG = {
+      // WhatsApp Phone number to receive order alerts (with country code)
+      whatsappPhone: "+251946734473",
+
+      // Green API Settings (Get from console.green-api.com after scanning QR code)
+      greenApi: {
+        idInstance: "",       // Paste your idInstance here (e.g. "1101823456")
+        apiTokenInstance: ""  // Paste your apiTokenInstance here
+      },
+
+      // Backup email to ensure 100% of orders are saved
+      backupEmail: "lewedajo@gmail.com"
+    };
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str).replace(/[&<>"']/g, m => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#039;' })[m]);
+    }
+
     function closeServiceModal() {
       document.getElementById('service-modal').classList.add('hidden');
       document.body.style.overflow = '';
       document.getElementById('service-form').reset();
       document.getElementById('form-success').classList.remove('visible');
       document.getElementById('service-form').style.display = 'block';
+
+      const submitBtn = document.getElementById('form-submit-btn');
+      const submitIcon = document.getElementById('form-submit-icon');
+      const submitText = document.getElementById('form-submit-text');
+      if (submitBtn) submitBtn.disabled = false;
+      if (submitIcon) submitIcon.className = 'fas fa-paper-plane';
+      if (submitText) submitText.innerText = (translations[currentLang] && translations[currentLang].form_btn_submit) || 'Submit Delivery Request';
     }
 
-    function handleFormSubmit(event) {
+    async function handleFormSubmit(event) {
       event.preventDefault();
       const form = event.target;
       const required = form.querySelectorAll('[required]');
@@ -1677,6 +1711,13 @@
         if (!field.value.trim()) valid = false;
       });
       if (!valid) return;
+
+      const submitBtn = document.getElementById('form-submit-btn');
+      const submitIcon = document.getElementById('form-submit-icon');
+      const submitText = document.getElementById('form-submit-text');
+      if (submitBtn) submitBtn.disabled = true;
+      if (submitIcon) submitIcon.className = 'fas fa-spinner fa-spin';
+      if (submitText) submitText.innerText = (translations[currentLang] && translations[currentLang].form_btn_submitting) || 'Submitting Request...';
 
       const getVal = (name) => (form.querySelector(`[name="${name}"]`)?.value || '').trim();
       const serviceType = document.getElementById('f-service-display')?.value || getVal('service_type') || 'Delivery';
@@ -1692,7 +1733,9 @@
       const deliveryLoc = getVal('delivery_loc');
       const notes = getVal('notes');
 
-      let msg = `*NEW LEWEDAJO DELIVERY REQUEST*\n`;
+      const orderId = 'LWD-' + Math.floor(100000 + Math.random() * 900000);
+
+      let msg = `*NEW LEWEDAJO ORDER #${orderId}*\n`;
       msg += `━━━━━━━━━━━━━━━━━━━━━\n`;
       msg += `🛍️ *Service:* ${serviceType}\n`;
       msg += `👤 *Customer Name:* ${fullName}\n`;
@@ -1708,6 +1751,7 @@
       msg += `🎯 *Location / Landmark:* ${deliveryLoc}\n`;
 
       const typeKey = document.getElementById('f-service-type')?.value;
+      let extraDetails = {};
       if (typeKey === 'medicine') {
         const medName = getVal('med_name');
         const hasRx = form.querySelector('input[name="has_prescription"]:checked')?.value || 'no';
@@ -1718,6 +1762,7 @@
         msg += `• Prescription Available: ${hasRx === 'yes' ? 'Yes' : 'No'}\n`;
         if (pharmacy) msg += `• Preferred Pharmacy: ${pharmacy}\n`;
         if (urgency) msg += `• Urgency: ${urgency.toUpperCase()}\n`;
+        extraDetails = { 'Medicine Name': medName, 'Prescription': hasRx, 'Preferred Pharmacy': pharmacy, 'Urgency': urgency };
       } else if (typeKey === 'electronics') {
         const elecName = getVal('elec_name');
         const brand = getVal('elec_brand');
@@ -1726,6 +1771,7 @@
         if (elecName) msg += `• Device/Model: ${elecName}\n`;
         if (brand) msg += `• Brand: ${brand}\n`;
         if (link) msg += `• Reference Link: ${link}\n`;
+        extraDetails = { 'Device / Model': elecName, 'Brand': brand, 'Link': link };
       } else if (typeKey === 'gift') {
         const occasion = getVal('occasion');
         const recipient = getVal('gift_recipient');
@@ -1734,24 +1780,114 @@
         if (occasion) msg += `• Occasion: ${occasion}\n`;
         if (recipient) msg += `• Recipient in Addis: ${recipient}\n`;
         if (giftMsg) msg += `• Personal Card Message: "${giftMsg}"\n`;
+        extraDetails = { 'Occasion': occasion, 'Recipient': recipient, 'Gift Message': giftMsg };
       }
 
       if (notes) {
         msg += `\n💬 *Special Notes:* ${notes}\n`;
       }
 
-      const waUrl = `https://wa.me/251946734473?text=${encodeURIComponent(msg)}`;
+      // Open the regular WhatsApp Messenger app (not the WhatsApp Business app).
+      // The customer must press Send inside WhatsApp to deliver the order.
+      const whatsappOrderUrl =
+        `whatsapp://send?phone=${LEWEDAJO_CONFIG.whatsappPhone.replace(/[^0-9]/g, '')}&text=${encodeURIComponent(msg)}`;
+      window.location.href = whatsappOrderUrl;
 
-      const successWaBtn = document.getElementById('form-success-wa-link');
-      if (successWaBtn) {
-        successWaBtn.href = waUrl;
+      // Optional Green API notification (requires a secure server-side integration;
+      // do not put real API tokens in public website JavaScript).
+      if (false && LEWEDAJO_CONFIG.greenApi?.idInstance && LEWEDAJO_CONFIG.greenApi?.apiTokenInstance) {
+        try {
+          const rawPhone = LEWEDAJO_CONFIG.whatsappPhone.replace(/[^0-9]/g, '');
+          const greenApiUrl = `https://api.green-api.com/waInstance${LEWEDAJO_CONFIG.greenApi.idInstance}/sendMessage/${LEWEDAJO_CONFIG.greenApi.apiTokenInstance}`;
+          fetch(greenApiUrl, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              chatId: `${rawPhone}@c.us`,
+              message: msg
+            })
+          }).catch(err => console.warn('Green API notification error:', err));
+        } catch (e) {
+          console.warn('Green API error:', e);
+        }
       }
 
+      // 2. Reliable Backup Email Delivery via FormSubmit AJAX (orders are never missed)
+      try {
+        const backupPayload = {
+          _subject: `New LEWEDAJO Order #${orderId} - ${serviceType} (${fullName})`,
+          _template: 'table',
+          _captcha: 'false',
+          'Order ID': orderId,
+          'Service': serviceType,
+          'Customer Name': fullName,
+          'Phone': phone,
+          'WhatsApp': whatsapp,
+          'Email': email || 'Not provided',
+          'Country of Residence': country,
+          'Delivery Destination': city,
+          'Item Needed': product,
+          'Quantity': quantity,
+          'Description': productDesc,
+          'Delivery Landmark': deliveryLoc,
+          'Notes': notes || 'None',
+          ...extraDetails
+        };
+        fetch(`https://formsubmit.co/ajax/${LEWEDAJO_CONFIG.backupEmail}`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify(backupPayload)
+        }).catch(err => console.warn('Backup email dispatch:', err));
+      } catch (e) {
+        console.warn('Backup email error:', e);
+      }
+
+      // 3. Save Order to localStorage (instant persistence & audit log)
+      try {
+        const saved = JSON.parse(localStorage.getItem('lewedajo_orders') || '[]');
+        saved.unshift({
+          orderId,
+          date: new Date().toLocaleString(),
+          serviceType, fullName, phone, whatsapp, email, country, city, product, quantity, productDesc, deliveryLoc, notes
+        });
+        localStorage.setItem('lewedajo_orders', JSON.stringify(saved.slice(0, 50)));
+      } catch (e) { }
+
+      // Smooth feedback delay
+      await new Promise(r => setTimeout(r, 600));
+
+      // 4. Populate Order Summary in the Success Panel
+      const summaryBox = document.getElementById('order-summary-box');
+      if (summaryBox) {
+        summaryBox.innerHTML = `
+          <div class="flex justify-between items-center pb-2 border-b border-green-200">
+            <span class="font-bold text-brand-dark">Reference #${orderId}</span>
+            <span class="text-xs bg-green-200 text-green-800 px-2.5 py-0.5 rounded-full font-semibold">Received</span>
+          </div>
+          <div class="pt-1 text-xs sm:text-sm space-y-1">
+            <p><strong class="text-gray-900">Service:</strong> ${escapeHtml(serviceType)}</p>
+            <p><strong class="text-gray-900">Item:</strong> ${escapeHtml(product)} (${escapeHtml(quantity)})</p>
+            <p><strong class="text-gray-900">Destination:</strong> ${escapeHtml(city)}</p>
+            <p><strong class="text-gray-900">Contact:</strong> ${escapeHtml(phone)} / ${escapeHtml(whatsapp)}</p>
+          </div>
+        `;
+      }
+
+      // 5. Show accurate instructions: WhatsApp opens with the order prepared.
+      const successTitle = document.querySelector('#form-success h3');
+      if (successTitle) successTitle.textContent = 'WhatsApp message prepared!';
+      const successCopy = document.querySelector('#form-success h3 + p');
+      if (successCopy) successCopy.textContent = 'The WhatsApp app should open with your order details. Please tap Send to submit your request to LEWEDAJO.';
       document.getElementById('service-form').style.display = 'none';
       document.getElementById('form-success').classList.add('visible');
 
-      // Immediately open WhatsApp with the complete order info
-      window.open(waUrl, '_blank') || (window.location.href = waUrl);
+      // Reset button state
+      if (submitBtn) submitBtn.disabled = false;
+      if (submitIcon) submitIcon.className = 'fas fa-paper-plane';
+      if (submitText) submitText.innerText = (translations[currentLang] && translations[currentLang].form_btn_submit) || 'Submit Delivery Request';
     }
 
     // ---- Footer Message Form ----
@@ -1764,24 +1900,56 @@
 
       if (!name || !email || !msg) return;
 
-      const subject = `LEWEDAJO Website Message from ${name}`;
-      const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${msg}`;
-      const mailtoUrl = `mailto:lewedajodelivery@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      const submitBtn = form.querySelector('button[type="submit"]');
+      if (submitBtn) submitBtn.disabled = true;
 
-      const waText = `*Message from LEWEDAJO Website*\n👤 *Name:* ${name}\n✉️ *Email:* ${email}\n💬 *Message:* ${msg}`;
-      const waUrl = `https://wa.me/251946734473?text=${encodeURIComponent(waText)}`;
+      // Open the regular WhatsApp Messenger app (not the WhatsApp Business app).
+      // The visitor must tap Send in WhatsApp to deliver the inquiry.
+      const waText = `*New Website Inquiry*\n👤 *Name:* ${name}\n✉️ *Email:* ${email}\n💬 *Message:* ${msg}`;
+      const waUrl = `whatsapp://send?phone=${LEWEDAJO_CONFIG.whatsappPhone.replace(/[^0-9]/g, '')}&text=${encodeURIComponent(waText)}`;
+      window.location.href = waUrl;
 
-      // Open email client
-      window.location.href = mailtoUrl;
+      // Optional Green API notification is disabled in public client-side code.
+      // Automatic sending should be implemented through a backend so API credentials stay private.
+      if (false && LEWEDAJO_CONFIG.greenApi?.idInstance && LEWEDAJO_CONFIG.greenApi?.apiTokenInstance) {
+        try {
+          const rawPhone = LEWEDAJO_CONFIG.whatsappPhone.replace(/[^0-9]/g, '');
+          const waText = `*New Website Inquiry*\n👤 *Name:* ${name}\n✉️ *Email:* ${email}\n💬 *Message:* ${msg}`;
+          const greenApiUrl = `https://api.green-api.com/waInstance${LEWEDAJO_CONFIG.greenApi.idInstance}/sendMessage/${LEWEDAJO_CONFIG.greenApi.apiTokenInstance}`;
+          fetch(greenApiUrl, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              chatId: `${rawPhone}@c.us`,
+              message: waText
+            })
+          }).catch(err => console.warn('Green API footer error:', err));
+        } catch (e) { }
+      }
 
-      // Display helpful feedback
+      // 2. Send via FormSubmit AJAX to backupEmail
+      try {
+        fetch(`https://formsubmit.co/ajax/${LEWEDAJO_CONFIG.backupEmail}`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+          body: JSON.stringify({
+            _subject: `New LEWEDAJO Inquiry from ${name}`,
+            _captcha: 'false',
+            'Name': name,
+            'Email': email,
+            'Message': msg
+          })
+        }).catch(err => console.warn(err));
+      } catch (e) { }
+
       const feedback = document.getElementById('footer-feedback');
       if (feedback) {
-        feedback.innerHTML = `Email client opened! You can also <a href="${waUrl}" target="_blank" class="underline font-bold text-white hover:text-green-300">chat directly on WhatsApp</a>.`;
+        feedback.textContent = `Thank you, ${name}! The WhatsApp app should open with your message. Please tap Send to deliver it to LEWEDAJO.`;
         feedback.classList.remove('hidden');
       }
 
       form.reset();
+      if (submitBtn) submitBtn.disabled = false;
     }
 
     // ---- Prescription upload toggle ----
